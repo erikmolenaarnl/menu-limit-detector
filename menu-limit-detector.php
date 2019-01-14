@@ -89,7 +89,7 @@ function mldetect_count_post_vars() {
 
 		$count = 0;
 		foreach( $_POST as $key => $arr ){
-			$count+= count( $arr );
+			$count+= count ( array ( $arr ) );
 		}
 
 		update_option( 'mldetect-post-var-count' , $count );
